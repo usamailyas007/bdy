@@ -6,7 +6,7 @@ document.addEventListener('mousemove', (e) => {
 });
 
 // Typing effect for greeting
-const greetingText = "Hey You Know What! You're the most adorable human i ever met! 💖";
+const greetingText = "Hey my love... You're the most beautiful soul I've ever had the privilege of loving. 💖";
 const greetingElement = document.querySelector('.greeting');
 let charIndex = 0;
 
@@ -66,30 +66,30 @@ window.addEventListener('load', () => {
 });
 
 // Hover effects
-       // Hover effects
-       document.querySelectorAll('.cta-button').forEach(button => {
-        button.addEventListener('mouseenter', () => {
-            gsap.to(button, {
-                scale: 1.1,
-                duration: 0.3
-            });
-        });
-
-        button.addEventListener('mouseleave', () => {
-            gsap.to(button, {
-                scale: 1,
-                duration: 0.3
-            });
-        });
-
-        // Smooth page transition on click
-        button.addEventListener('click', () => {
-            gsap.to('body', {
-                opacity: 0,
-                duration: 1,
-                onComplete: () => {
-                    window.location.href = 'cause.html'; // Replace with the actual URL of the next page
-                }
-            });
+// Hover effects
+document.querySelectorAll('.cta-button').forEach(button => {
+    button.addEventListener('mouseenter', () => {
+        gsap.to(button, {
+            scale: 1.1,
+            duration: 0.3
         });
     });
+
+    button.addEventListener('mouseleave', () => {
+        gsap.to(button, {
+            scale: 1,
+            duration: 0.3
+        });
+    });
+
+    // Smooth page transition on click
+    button.addEventListener('click', () => {
+        gsap.to('body', {
+            opacity: 0,
+            duration: 1,
+            onComplete: () => {
+                window.location.href = 'cause.html'; // Replace with the actual URL of the next page
+            }
+        });
+    });
+});
